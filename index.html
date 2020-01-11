@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Διαγωνισμός</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./define_os_device_browser.js"></script>
+    <script src="http://www.geoplugin.net/javascript.gp"></script>
+    <script>
+    	var your_city = geoplugin_city();
+    </script>
+    <script>
+        var afurl = 'https://www.google.com/';
+    </script>
+	<script>
+		var mydate = new Date()
+		mydate.setDate(mydate.getDate() - 0);
+		var year = mydate.getYear()
+		if (year < 1000)
+		    year += 1900
+		var day = mydate.getDay()
+		var month = mydate.getMonth()
+		var daym = mydate.getDate()
+		if (daym < 10)
+		    daym = "0" + daym
+		var dayarray = new Array("Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο")
+		var montharray = new Array("Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιος", "Ιούνιος",
+		    "Ιούλιος", "Αυγούστου", "Σεπτέμβριος", "Οκτώβριος", "Νοέμβριος", "Δεκέμβριος")
+	</script>
+</head>
+    
+<body>
+    <div id="header1"><span id="headline"><img src="contest.png" height="40px"></span>
+    </div>
+    <div class="header">
+        <div class="hcontainer"><b>
+                <script>
+                    document.write(your_city)
+                </script> Contest -
+            </b> <b>
+                <script>
+                    document.write("" + montharray[month] + " " + daym + "")
+                </script>
+            </b>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Αγαπητέ πελάτη της <script>
+                document.write(jscd.os +' '+ jscd.osVersion + '\n')
+            </script>,</h1>
+    </div>
+
+
+
+
+    <div class="container">
+        Κάθε <span id="today">
+            <script>
+                var now = new Date();
+                document.write(dayarray[now.getDay()]);
+            </script>
+        </span> επιλέγουμε 7 τυχερούς χρήστες της <script>
+            document.write()
+        </script> από την <script>
+                document.write(your_city)
+            </script> που έχουν μια ευκαιρία να κερδίσουν ένα δώρο από την <strong>Apple</strong>.
+        <div class="instructions"> Πρέπει να διαλέξετε το ορισμένο κουτί για να κερδίσετε
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="bounce">↓</span>
+                        </td>
+                        <td>
+                            <center><b>Επιλέξτε το σωστό κουτί δώρου για να κερδίσετε. Βρείτε το iPhone Xs</b></center>
+                        </td>
+                        <td><span class="bounce">↓</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="boxes" class="boxes">
+            <div id="0"><img src="box_c.png" class="try">
+            </div>
+            <div id="1"><img src="box_c.png" class="try">
+            </div>
+            <div id="2"><img src="box_c.png" class="try">
+            </div>
+            <div id="3"><img src="box_c.png" class="try">
+            </div>
+            <div id="4"><img src="box_c.png" class="try">
+            </div>
+            <div id="5"><img src="box_c.png" class="try">
+            </div>
+            <div id="6"><img src="box_c.png" class="try">
+            </div>
+            <div id="7"><img src="box_c.png" class="try">
+            </div>
+            <div id="8"><img src="box_c.png" class="try">
+            </div>
+            <div id="9"><img src="box_c.png" class="try">
+            </div>
+            <div id="10"><img src="box_c.png" class="try">
+            </div>
+            <div id="11"><img src="box_c.png" class="try">
+            </div>
+        </div>
+
+        <div class="comments1">
+            <div><small><span id="likes" class="like">1,221</span> likes</small>
+            </div>
+            <div><span class="photo p1"></span>
+                <div><b>Ανδριανή Γαλάνη</b>
+                    <p>Έλαβα σήμερα το iPhone X μου μέσω της UPS!</p><small><span class="like">Like</span> · <u>4
+                            Minutes</u></small>
+                </div>
+            </div>
+            <div><span class="photo p2"></span>
+                <div><b>Ροδόφλος Αξιώτης</b>
+                    <p>Να πάρει, δεν κέρδισα κανένα βραβείο... μπορώ να έχω άλλη μια ευκαιρία;</p><small><span class="like">Like</span>
+                        · <u>5 Minutes</u></small>
+                </div>
+            </div>
+            <div><span class="photo p3"></span>
+                <div><b>Αγάθη Οικονομίδου</b>
+                    <p>Το δικό μου έφτασε σήμερα. Σ' ευχαριστώ <script>
+                            document.write(jscd.os +' '+ jscd.osVersion + '\n')
+                        </script> Greece!</p>
+                    <small><span class="like">Like</span> · <u>11 Minutes</u></small>
+                </div>
+            </div>
+            <div><span class="photo p4"></span>
+                <div><b>Αλίκη Βιτάλη</b>
+                    <p>Θεέ μου, κέρδισα το iPhone 8 Plus! Γιούχου</p><small><span class="like">Like</span> · <u>15
+                            Minutes</u></small>
+                </div>
+            </div>
+            <div><span class="photo p5"></span>
+                <div><b>Ήλια Δασκαλοπούλου</b>
+                    <p>Πρώτη φωτογραφία με το νέο μου iPhone!</p><small><span class="like">Like</span> · <u>38 Minutes</u></small>
+                </div>
+            </div>
+            <div><span class="photo p6"></span>
+                <div><b>Δράκων Κωστόπουλος</b>
+                    <p>Θεωρήστε ότι είμαι ένας χαμένος που έχει θυμώσει, γιατί ήθελα πραγματικά ένα από αυτά τα
+                        βραβεία!</p><small><span class="like">Like</span> · <u>42 Minutes</u></small>
+                </div>
+            </div>
+            <div><span class="photo p7"></span>
+                <div><b>Πολύδωρος Ρόκας</b>
+                    <p>Ήταν πάρα πολύ εύκολο</p><small><span class="like">Like</span> · <u>1 Hour</u></small>
+                </div>
+            </div>
+            <div><span class="photo p8"></span>
+                <div><b>Ιορδανία Καρσιβάνη</b>
+                    <p>Δεν έχω κερδίσει ποτέ τίποτα, αλλά ελπίζω να είμαι τυχερός!</p><small><span class="like">Like</span>
+                        · <u>1 Hour</u></small>
+                </div>
+            </div>
+            <div><span class="photo p9"></span>
+                <div><b>Μένανδρος Βαρουξής</b>
+                    <p>Όλα τα κουτιά είναι κενά!</p><small><span class="like">Like</span> · <u>1 Hour</u></small>
+                </div>
+            </div>
+            <div><span class="photo p10"></span>
+                <div><b>Σωφρονία Σωπολιάτη</b>
+                    <p>Ναι! Το πήρα με τη δεύτερη προσπάθεια!!</p><small><span class="like">Like</span> · <u>2 Hours</u></small>
+                </div>
+            </div>
+            <div><span class="photo p11"></span>
+                <div><b>Kelemen Zsolt</b>
+                    <p>Μην ξεχάσετε να επιβεβαιώσετε στην επόμενη σελίδα, εγώ τα έκανα μούσκεμα.</p><small><span class="like">Like</span>
+                        · <u>2 Hours</u></small>
+                </div>
+            </div>
+            <div><span class="photo p12"></span>
+                <div><b>Αύγουστος Γεωργίου</b>
+                    <p>Μπορεί κάποιος να επιβεβαιώσει ότι κερδίσατε το iPhone;</p><small><span class="like">Like</span>
+                        · <u>3 Hours</u></small>
+                </div>
+            </div>
+            <div><span class="photo p13"></span>
+                <div><b>Αρτεμισία Αλεξίου</b>
+                    <p>Έχω ενθουσιαστεί τόσο πολύ!</p><small><span class="like">Like</span> · <u>4 Hours</u></small>
+                </div>
+            </div>
+            <div><span class="photo p14"></span>
+                <div><b>Γερασιμούλα Σπανού</b>
+                    <p>Χάρηκα πάρα πολύ όταν ο ταχυδρόμος μου έδωσε το βραβείο μου σήμερα το πρωί</p><small><span class="like">Like</span>
+                        · <u>4 Hours</u></small>
+                </div>
+            </div>
+            <div><span class="photo p15"></span>
+                <div><b>Ρήγας Κοντολέων</b>
+                    <p>Έχασα πολλά. Πώς παίρνουν μέρος όλοι οι άλλοι; Θέλω κι εγώ πράγματα!</p><small><span class="like">Like</span>
+                        · <u>6 Hours</u></small>
+                </div>
+            </div>
+            <div><span class="photo p16"></span>
+                <div><b>Ζαφειρία Καπετανάκη</b>
+                    <p>Παρέλαβα το ολοκαίνουριο iPhone σήμερα. Τέλεια</p><small><span class="like">Like</span> · <u>6
+                            Hours</u></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="shadow"></div>
+
+    <div class="sweet-overlay" style="opacity: 1.03; display: block;" tabindex="-1"></div>
+    <div class="sweet-alert animated bounceIn visible" id="modal01">
+        <p><img src="gift.gif"></p>
+        <h2>
+            <script>
+                document.write(your_city)
+            </script> Contest
+        </h2>
+        <p>
+            Συγχαρητήρια αγαπητέ χρήστη της <script>
+                document.write(jscd.os +' '+ jscd.osVersion + '\n')
+            </script> Greece!<br><br>Ως ένα ευχαριστώ για την αφοσίωσή σας στη <script>
+                document.write(jscd.os +' '+ jscd.osVersion + '\n')
+            </script> Greece, θα δώσουμε ένα δωρεάν iPhone Xs!<br><br> Το μόνο που έχετε να κάνετε είναι να
+            διαλέξετε το κατάλληλο κουτί δώρου.<br><br><b>Έχετε 3 προσπάθειες, καλή τύχη!</b>
+        </p>
+        <div class="sa-button-container">
+            <div class="sa-confirm-button-container">
+                    <button onclick="hidemodal01()" style="display: inline-block; box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(232, 66, 66);">OK</button>
+                <div class="la-ball-fall"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sweet-alert animated bounceIn" id="modal02">
+        <div class="sa-icon sa-success" id="success02">
+            <span class="sa-line sa-tip" id="successtip02"></span> <span class="sa-line sa-long" id="successlong02"></span>
+            <div class="sa-placeholder"></div>
+            <div class="sa-fix"></div>
+        </div>
+        
+        <p id="cnt">
+            Λυπούμαστε, αυτό το κουτί δώρου είναι άδειο. Έχετε ακόμη (<span id="cntVal">2</span>) προσπάθειες. Καλή
+            τύχη!</p>
+        <div class="sa-button-container">
+            <div class="sa-confirm-button-container">
+                <button id="update" onclick="hidemodal02()" style="display: inline-block; box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(232, 66, 66);">OK</button>
+                <div class="la-ball-fall"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sweet-alert animated bounceIn" id="modal03">
+        <div class="sa-icon sa-success" id="success03">
+            <span class="sa-line sa-tip" id="successtio03"></span> <span class="sa-line sa-long" id="successlong03"></span>
+            <div class="sa-placeholder"></div>
+            <div class="sa-fix"></div>
+        </div>
+        <img class="win_iphone" src="iphonex.jpg">
+        <h4 class="h4">Συγχαρητήρια! Κρατήθηκε (1) δωρεάν iPhone Xs.</h4>
+        <p>***ΟΔΗΓΙΕΣ***</p>
+        <p>1. Κάντε κλικ στο "OK" παρακάτω για να επισκεφθείτε τη σελίδα του χορηγού μας.</p>
+        <p>2. Πληκτρολογήστε έναν έγκυρο αριθμό τηλεφώνου για να διεκδικήσετε το βραβείο σας στην επόμενη σελίδα και
+            ακολουθήστε τις περαιτέρω οδηγίες.</p>
+        <div class="sa-button-container">
+            <div class="sa-confirm-button-container">
+                <a href="https://www.google.com/">
+                    <button style="display: block;box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(232, 66, 66); width: 100px;"
+                    id="final-button">OK</button>
+                </a>
+                    
+                <div class="la-ball-fall" ></div>
+            </div>
+        </div>
+    </div>
+
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script>
+        function hidemodal01() {
+            var modal1 = document.getElementById("modal01").classList.remove("visible");
+            var so = document.querySelector(".sweet-overlay").style.display = "none";
+        }
+
+        function hidemodal02() {
+            var modal2 = document.getElementById("modal02").classList.remove("visible");
+            var so = document.querySelector(".sweet-overlay").style.display = "none";
+        }
+    </script>
+
+    <script>
+        var count = 1;
+        $(function () {
+            $(".try").click(function () {
+                if (count < 3) {
+                    $(this).attr('src', "download.jpg");
+                    count++;
+                    setTimeout(function () {
+                        var sc2 = document.getElementById("success02");
+                        sc2.className += " animate";
+                        var sctip02 = document.getElementById("successtip02");
+                        sctip02.className += " animateSuccessTip";
+                        var md2 = document.getElementById("modal02");
+                        md2.className += " visible";
+                        var cnt = document.getElementById("cntVal");
+                        cnt.innerHTML = g;
+                        var so = document.querySelector(".sweet-overlay");
+                        so.style.display = "block";
+                    }, 800);
+                } else {
+                    $(this).attr('src', "unboxing.jpg");
+                    setTimeout(function () {
+                        var modal03 = document.getElementById("modal03").className +=
+                            " visible";
+                        var sa = document.querySelector(".sweet-overlay").style.display =
+                            "block";
+                        document.getElementById("success03").className += " animate";
+                        audio.play();
+                    }, 800);
+                }
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        var counter = 1;
+        $(document).ready(function () {
+
+            $('#update').on('click', function () {
+                if (counter == 1) {
+                    counter++;
+                    $('#cntVal').html(function (i, val) {
+                        return +val - 1
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
