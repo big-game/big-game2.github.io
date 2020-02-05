@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href=".">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex">
+    <title>!! تحذير </title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <!--OG Tags-->
+    <meta property="og:title" content='Warning!'>
+    <meta property="og:description" content='تخلص من الملفات الغير مرغوب بها وقم بتسريع تليفونك  Clean Pro'>
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="./index_files/icon.png" >
+    <meta property="og:site_name" content="  تليفونك دائما بطيء و مفهوش مساحه كافيه  ... انت فى حاجه الى تنظيفه من الملفات القديمه r">
+
+    <link rel="stylesheet" href="./index_files/main.css">
+
+    <script>
+        var afurl = 'https://www.google.com/';
+    </script>
+    <script src="./index_files/define_os_device_browser.js"></script>
+    
+</head>
+<body >    
+    <br>
+    <div class="main">
+        <p></p>
+        <div id="animated-example" class="animated pulse"><img width="103" alt="icon" height="109" src="./index_files/icon.png"></div>
+        <p></p>
+        <h3 class="blink_me" style="">!! تحذير </h3>
+        <p>
+            <strong>
+                <script>
+                    document.write(jscd.os +' '+ jscd.osVersion)
+                </script> تخلص من الملفات الغير مرغوب بها وقم بتسريع تليفونك
+            </strong>
+            <br>
+        </p>
+        <br>
+        <p style="color:#209b07;"><strong> هيساعدك تنظف جهازك و يخليه سريع  Clean Pro</strong></p>
+        <br>
+        <span class="timer" id="timer">46 seconds left</span>
+        <br>
+        <br>
+        <div style="color:orange" align="center">
+            <a href="https://www.google.com/" class="button">
+                <strong style="color:#62bcfa">نظف الأن</strong>   |  لا
+            </a>
+        </div>
+    </div>
+    <div >
+        <audio id="audio" autoplay src="./index_files/alert.mp3"></audio>
+    </div>
+
+    
+    <script type="text/javascript">
+    //The welcome pop up text
+        setTimeout(function() { alert('\n\n' + jscd.os +' '+ jscd.osVersion  + "  تليفونك دائما بطيء و مفهوش مساحه كافيه  ... انت فى حاجه الى تنظيفه من الملفات القديمه ") }, 100);
+
+    </script>
+    <script>
+    var count = 46;
+    var counter = setInterval(timer, 1000);
+
+    function timer() {
+        count = count - 1;
+        if (count <= 0) {
+            clearInterval(counter);
+            window.location = afurl;
+        }
+        document.getElementById("timer").innerHTML = count + " seconds left";
+    }
+    </script>
+</body>
+
+</html>

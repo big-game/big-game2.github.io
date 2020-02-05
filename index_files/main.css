@@ -1,0 +1,116 @@
+body {
+    background-color: #595a5e;
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+    width: 100%;
+    color: #333;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    min-height: 100%;
+    top: 0px;
+}
+
+h3 {
+    color: #0074FF
+}
+
+.main {
+    background-color: #e4e4e4;
+    margin: 0px 10px 0 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #000;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #FFF
+}
+
+.main p {
+    margin-right: 15px;
+    margin-left: 15px
+}
+
+.button {
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    text-decoration: none;
+    color: #333;
+    background-color: #FFF;
+    display: block;
+    border-width: 1px;
+    border-style: solid none none;
+    border-color: #999;
+
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+    display:block;
+    margin: 12px auto;
+}
+body .blink_me{
+    font-size:24px;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+        color: #76BBF5;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+.timer{
+    color:red;
+    font-weight: bold
+}
