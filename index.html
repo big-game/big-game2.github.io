@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href=".">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="">
+    <meta name="vapid-key" content="">
+    <title>Congratulations!</title>
+    <meta name="alert-message" content="Je nám to ľúto \n\nProsím skúste znova. Máte ešte jednu šancu!">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/spin.css">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='./img/favicon.ico'>
+    <script>let afurl = 'https://www.google.com'</script>
+    <script>
+        var d = new Date();
+        var day = new Array( "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var month = new Array("01", "02", "03", "04", "05", "06",
+            "07", "08", "09", "10", "11", "12");
+    </script>
+</head>
+
+<body class="body is-mobile is-chrome is-desktop">
+    <!-- PRELANDER CONTENT -->
+    <div class="content">
+        <div class="content-suptitle">SPIN &amp; WIN!</div>
+        <h1 class="content-title">Congratulations!</h1>
+        <div class="content-subtitle">You are today's lucky visitor!</div>
+        <script language="javascript" type="text/javascript">
+        document.write(day[d.getDay()] + " " + d.getDate() + ". " + month[d.getMonth()] +
+            ". " + d.getFullYear() + "  ");
+        </script>
+        <div class="content-date"></div>
+        <div class="wheel" id="wheel">
+            <img src="./img/prizewheel.png" class="wheel-image">
+            <img src="./img/prizewheel_border.png" class="wheel-image-border">
+            <img src="./img/iphone.png" class="wheel-prize">
+        </div>
+        <div class="content-body">
+            Every <span class="strong">
+                <script>
+                    document.write(day[d.getDay()]);
+                </script></span> we randomly select <span class="strong">5 lucky mobile visitors </span> from your location to receive an exclusive offer from our sponsors. Turn the wheel to find out what gift you can win!
+        </div>
+    </div>
+    <div class="overlay" id="instructions">
+        <div class="overlay-background"></div>
+        <div class="overlay-modal">
+            <h2 class="overlay-title">Congratulations</h2>
+            <p><span class="strong">How to claim your prize: </span></p>
+            <div class="text_box">
+                <p>1. Press 'Take your 'iPhone 11' , you will be redirected to our partner's website.</p>
+                <p>2. Send the code to confirm the delivery.</p>
+                <a href="#"><span></span></a>
+            </div>
+            <a href="javascript:void(0)" onclick="linkTo()" class="button-subscribe" id="subscribe">Take your iPhone 11!</a>
+            <p>Officially sponsored by: <i class="fab fa-apple"></i></p>
+        </div>
+    </div>
+    <div class="overlay" id="finished">
+        <div class="overlay-background"></div>
+        <div class="overlay-modal">
+            <h2 class="overlay-title">Thank you</h2>
+            <strong>Winners will be notified soon</strong>
+        </div>
+    </div>
+    <div class="overlay" id="finished-redirect">
+        <div class="overlay-background"></div>
+        <div class="overlay-modal">
+            <h2 class="overlay-title">Starting round 2...</h2>
+        </div>
+    </div>
+    <div class="pointer-exit js-exit-reset" id="pointer-exit">
+        <div class="pointer-exit-modal">
+            <p class="pointer-exit-title">Don't forfeit your prize</p>
+            <p class="pointer-exit-body">
+                Closing this page will eliminate you from this competition.
+                Click "Allow" to be able to win this prize!
+            </p>
+        </div>
+    </div>
+    <div class="pointer is-animated-floating" id="pointer">
+        click <span class="strong">allow</span> to win!
+    </div>
+    <!-- canvas for confetti -->
+    <div class="canvas_box">
+        <canvas id="canvas"></canvas>
+    </div>
+    <!-- END OF PRELANDER CONTENT -->
+
+    <script src="./js/main.js"></script>    
+    <script type="text/javascript" src="./js/confetti.js"></script>
+    <!-- Importing for confetti -->
+    <script type="text/javascript">
+    //add only confetti js
+        var confettiSettings = { target: 'canvas', max: "280", clock:"80" };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        function startConfetti(){
+            confetti.render();
+        }
+
+        function linkTo(){
+            window.location = afurl;
+        }
+    </script>
+</body>
+
+</html>

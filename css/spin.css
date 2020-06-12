@@ -1,0 +1,145 @@
+
+.spinAround {
+    -webkit-animation: spin 6.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    90% {
+        -webkit-transform: rotate(3110deg);
+        -ms-transform: rotate(3110deg);
+        transform: rotate(3110deg)
+    }
+
+    95% {
+        -webkit-transform: rotate(3108deg);
+        -ms-transform: rotate(3108deg);
+        transform: rotate(3108deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(3109deg);
+        -ms-transform: rotate(3109deg);
+        transform: rotate(3109deg)
+    }
+}
+
+.spinAround2 {
+    -webkit-animation: spin2 6.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(3109deg);
+        -ms-transform: rotate(3109deg);
+        transform: rotate(3109deg)
+    }
+
+    90% {
+        -webkit-transform: rotate(6314deg);
+        -ms-transform: rotate(6314deg);
+        transform: rotate(6314deg)
+    }
+
+    95% {
+        -webkit-transform: rotate(6312deg);
+        -ms-transform: rotate(6312deg);
+        transform: rotate(6312deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(6313deg);
+        -ms-transform: rotate(6313deg);
+        transform: rotate(6313deg)
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1
+    }
+}
+
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn
+}
+
+.transparent {
+    opacity: .6;
+    filter: alpha(opacity=60)
+}
+.wheel-prize.active{
+	opacity: 1;
+	z-index: 11;
+}
+.canvas_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: -10;
+}
+.z_top{
+    z-index: 19;
+}
